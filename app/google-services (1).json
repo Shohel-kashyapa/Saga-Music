@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607909463177",
+    "project_id": "sagamusic-9d29c",
+    "storage_bucket": "sagamusic-9d29c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607909463177:android:abf695939b866ef3b9f258",
+        "android_client_info": {
+          "package_name": "com.example.sagamusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607909463177-c03vesvvaoee44sf68tu5ud764h7vsga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBts6Nqjg6ods6ksUq8OZ7lnWYJuCt5C8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607909463177-c03vesvvaoee44sf68tu5ud764h7vsga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
