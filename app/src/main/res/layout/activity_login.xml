@@ -16,21 +16,21 @@
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.314" />
+            app:layout_constraintVertical_bias="0.306" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="357dp"
+            android:layout_height="71dp"
             android:text="LOG IN"
             android:textColor="#000000"
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
-            app:layout_constraintVertical_bias="0.692" />
+            app:layout_constraintVertical_bias="0.654" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username1"
@@ -84,21 +84,20 @@
             android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
+            app:layout_constraintVertical_bias="0.716" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="362dp"
+            android:layout_height="64dp"
             android:text="creat account"
             android:textColor="#000000"
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintHorizontal_bias="0.562"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
             app:layout_constraintVertical_bias="0.839" />
@@ -110,7 +109,7 @@
             android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.101" />
 
