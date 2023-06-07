@@ -2,23 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/menu_home"
         android:icon="@drawable/home1"
         android:title="@string/home"/>
+
     <item
-        android:id="@+id/store"
+        android:id="@+id/menu_store"
         android:icon="@drawable/store"
         android:title="@string/store"/>
     <item
-        android:id="@+id/instrument"
+        android:id="@+id/menu_instrument"
         android:icon="@drawable/instrument"
         android:title="@string/my_instrument"/>
     <item
-        android:id="@+id/account"
+        android:id="@+id/menu_account"
         android:icon="@drawable/account"
         android:title="@string/account"/>
     <item
-        android:id="@+id/logout"
+        android:id="@+id/menu_logout"
         android:icon="@drawable/logout"
         android:title="@string/logout"/>
 </menu>

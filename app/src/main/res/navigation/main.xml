@@ -2,11 +2,38 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main">
+    android:id="@+id/main"
+    app:startDestination="@id/menu_home">
+
     <fragment
-        android:id="@+id/homeprofile"
-        android:name="com.example.sagamusic.profileFragment"
-        android:label="profile"
-        tools:layout="@layout/fragment_profile"/>
+        android:id="@+id/menu_home"
+        android:name="com.example.sagamusic.homeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/menu_account"
+        android:name="com.example.sagamusic.accountFragment"
+        android:label="account"
+        tools:layout="@layout/fragment_account"/>
+    <fragment
+        android:id="@+id/menu_instrument"
+        android:name="com.example.sagamusic.instrumentFragment"
+        android:label="instrument"
+        tools:layout="@layout/fragment_instrument" />
+    <fragment
+        android:id="@+id/menu_logout"
+        android:name="com.example.sagamusic.logoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/menu_store"
+        android:name="com.example.sagamusic.storeFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sagamusic.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 
 </navigation>
