@@ -73,11 +73,13 @@
         <fragment
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="514dp"
-            android:layout_height="1331dp"
+            android:layout_width="442dp"
+            android:layout_height="1001dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
             app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navGraph="@navigation/main" />

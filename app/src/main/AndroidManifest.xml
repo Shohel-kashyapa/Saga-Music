@@ -21,6 +21,9 @@
             android:name=".adminpage"
             android:exported="false" />
         <activity
+            android:name=".ForgetPassword"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity
