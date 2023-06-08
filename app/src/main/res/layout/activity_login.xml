@@ -19,18 +19,34 @@
             app:layout_constraintVertical_bias="0.306" />
 
         <Button
+            android:id="@+id/button2"
+            android:layout_width="217dp"
+            android:layout_height="38dp"
+            android:layout_gravity="left"
+            android:layout_margin="4dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="Log in as a admin"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.799" />
+
+        <Button
             android:id="@+id/button"
-            android:layout_width="357dp"
-            android:layout_height="71dp"
+            android:layout_width="282dp"
+            android:layout_height="53dp"
             android:text="LOG IN"
             android:textColor="#000000"
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
-            app:layout_constraintVertical_bias="0.654" />
+            app:layout_constraintVertical_bias="0.698" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username1"
@@ -41,14 +57,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.557"
+            android:layout_marginTop="70dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
             app:layout_constraintVertical_bias="0.465">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:background="#FFFF"
-                android:layout_height="51dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_height="51dp"
+                    android:background="#FFFF" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,6 +76,7 @@
             android:layout_width="358dp"
             android:layout_height="62dp"
             android:hint="Enter password"
+            android:layout_marginTop="85dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.547"
@@ -65,17 +84,17 @@
             app:layout_constraintTop_toTopOf="@+id/image2"
             app:layout_constraintVertical_bias="0.552">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="400dp"
-                android:layout_height="51dp"
-                android:background="#ffffff" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="51dp"
+                    android:background="#ffffff" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="279dp"
-            android:layout_height="44dp"
+            android:layout_width="217dp"
+            android:layout_height="38dp"
             android:layout_gravity="left"
             android:layout_margin="4dp"
             android:background="#00000000"
@@ -86,21 +105,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.716" />
+            app:layout_constraintVertical_bias="0.728" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="362dp"
+            android:layout_width="343dp"
             android:layout_height="64dp"
             android:text="creat account"
             android:textColor="#000000"
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.562"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
-            app:layout_constraintVertical_bias="0.839" />
+            app:layout_constraintVertical_bias="0.912" />
 
         <ImageView
             android:id="@+id/image3"
@@ -109,9 +127,9 @@
             android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.101" />
+            app:layout_constraintVertical_bias="0.071" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
