@@ -12,10 +12,13 @@
         android:theme="@style/Theme.SagaMusic"
         tools:targetApi="31">
         <activity
-            android:name=".adminpage"
+            android:name=".servicetrack"
             android:exported="false" />
         <activity
-            android:name=".ForgetPassword"
+            android:name=".ordertrack"
+            android:exported="false" />
+        <activity
+            android:name=".MainTracking"
             android:exported="false" />
         <activity
             android:name=".home"

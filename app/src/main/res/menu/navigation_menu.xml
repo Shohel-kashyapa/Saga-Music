@@ -19,8 +19,13 @@
         android:icon="@drawable/account"
         android:title="@string/account"/>
     <item
+        android:id="@+id/menu_track"
+        android:icon="@drawable/tracking"
+        android:title="main_tracking"/>
+    <item
         android:id="@+id/menu_logout"
         android:icon="@drawable/logout"
         android:title="@string/logout"/>
+
 </menu>
 

@@ -19,7 +19,7 @@
             app:layout_constraintVertical_bias="0.306" />
 
         <Button
-            android:id="@+id/pwbtn"
+            android:id="@+id/button"
             android:layout_width="357dp"
             android:layout_height="71dp"
             android:text="LOG IN"
@@ -33,7 +33,7 @@
             app:layout_constraintVertical_bias="0.654" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
+            android:id="@+id/username1"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="359dp"
             android:layout_height="57dp"
@@ -53,7 +53,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pass"
+            android:id="@+id/username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="358dp"
             android:layout_height="62dp"
@@ -88,9 +88,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.716" />
 
-
-
-
         <Button
             android:id="@+id/button4"
             android:layout_width="362dp"
@@ -100,10 +97,10 @@
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.673"
+            app:layout_constraintHorizontal_bias="0.562"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/image2"
-            app:layout_constraintVertical_bias="0.916" />
+            app:layout_constraintVertical_bias="0.839" />
 
         <ImageView
             android:id="@+id/image3"
@@ -112,9 +109,9 @@
             android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.036" />
+            app:layout_constraintVertical_bias="0.101" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
