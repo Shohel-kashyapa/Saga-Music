@@ -1,0 +1,59 @@
+Index: app/src/main/res/layout/activity_myinsaddpage.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".myinsaddpage\">\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView\"\r\n        android:layout_width=\"878dp\"\r\n        android:layout_height=\"992dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.479\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.003\"\r\n        app:srcCompat=\"@drawable/Myins\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView2\"\r\n        android:layout_width=\"256dp\"\r\n        android:layout_height=\"411dp\"\r\n        android:layout_marginBottom=\"196dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.496\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\"\r\n        tools:srcCompat=\"@tools:sample/avatars\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView7\"\r\n        android:layout_width=\"180dp\"\r\n        android:layout_height=\"57dp\"\r\n        android:layout_marginEnd=\"152dp\"\r\n        android:layout_marginBottom=\"116dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"#FFFFFF\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/button9\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Remove my instruments\"\r\n        android:backgroundTint=\"#930000\"\r\n        tools:layout_editor_absoluteX=\"87dp\"\r\n        tools:layout_editor_absoluteY=\"638dp\" />\r\n\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>\r\n
+===================================================================
+diff --git a/app/src/main/res/layout/activity_myinsaddpage.xml b/app/src/main/res/layout/activity_myinsaddpage.xml
+--- a/app/src/main/res/layout/activity_myinsaddpage.xml	
++++ b/app/src/main/res/layout/activity_myinsaddpage.xml	
+@@ -20,22 +20,21 @@
+ 
+     <ImageView
+         android:id="@+id/imageView2"
+-        android:layout_width="256dp"
+-        android:layout_height="411dp"
+-        android:layout_marginBottom="196dp"
++        android:layout_width="270dp"
++        android:layout_height="248dp"
++        android:layout_marginBottom="328dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.496"
++        app:layout_constraintHorizontal_bias="0.546"
+         app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintVertical_bias="1.0"
+         tools:srcCompat="@tools:sample/avatars" />
+ 
+     <TextView
+         android:id="@+id/textView7"
+-        android:layout_width="180dp"
+-        android:layout_height="57dp"
+-        android:layout_marginEnd="152dp"
+-        android:layout_marginBottom="116dp"
++        android:layout_width="316dp"
++        android:layout_height="55dp"
++        android:layout_marginEnd="48dp"
++        android:layout_marginBottom="256dp"
+         android:text="TextView"
+         android:textColor="#FFFFFF"
+         app:layout_constraintBottom_toBottomOf="parent"
+@@ -43,12 +42,14 @@
+ 
+     <Button
+         android:id="@+id/button9"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="Remove my instruments"
++        android:layout_width="284dp"
++        android:layout_height="48dp"
+         android:backgroundTint="#930000"
+-        tools:layout_editor_absoluteX="87dp"
+-        tools:layout_editor_absoluteY="638dp" />
++        android:text="Remove my instruments"
++        tools:layout_editor_absoluteX="63dp"
++        tools:layout_editor_absoluteY="484dp" />
++
++
+ 
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
