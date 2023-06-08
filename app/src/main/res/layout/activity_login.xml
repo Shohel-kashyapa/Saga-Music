@@ -19,7 +19,7 @@
             app:layout_constraintVertical_bias="0.306" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/pwbtn"
             android:layout_width="357dp"
             android:layout_height="71dp"
             android:text="LOG IN"
@@ -33,7 +33,7 @@
             app:layout_constraintVertical_bias="0.654" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username1"
+            android:id="@+id/email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="359dp"
             android:layout_height="57dp"
@@ -53,7 +53,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
+            android:id="@+id/pass"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="358dp"
             android:layout_height="62dp"

@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -32,9 +33,13 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // Get references to UI elements
-        mEmailEditText = findViewById(R.id.email);
-        mPasswordEditText = findViewById(R.id.pass);
-        mLoginButton = findViewById(R.id.button);
+        TextInputLayout mEmailTextInputLayout = findViewById(R.id.email);
+        TextInputLayout mPasswordTextInputLayout = findViewById(R.id.pass);
+        mLoginButton = findViewById(R.id.pwbtn);
+
+        // Get references to EditText within TextInputLayout
+        mEmailEditText = mEmailTextInputLayout.getEditText();
+        mPasswordEditText = mPasswordTextInputLayout.getEditText();
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -81,22 +86,11 @@ public class login extends AppCompatActivity {
             }
         });
 
-        Button forgetpw = findViewById(R.id.pwbtn);
-        forgetpw.setOnClickListener(new View.OnClickListener() {
+        Button forgetPasswordButton = findViewById(R.id.button3);
+        forgetPasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Start the sign-up activity
-                Intent intent = new Intent(login.this, ForgetPassword.class);
-                startActivity(intent);
-            }
-        });
-
-        Button forgotPassword = findViewById(R.id.pwbtn); // Add this line
-
-        forgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(login.this); // Fix the constructor
+                AlertDialog.Builder builder = new AlertDialog.Builder(login.this);
                 View dialogView = getLayoutInflater().inflate(R.layout.activity_forget_password, null);
                 EditText emailBox = dialogView.findViewById(R.id.emailBox);
                 builder.setView(dialogView);
@@ -105,7 +99,7 @@ public class login extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         String userEmail = emailBox.getText().toString();
-                        if (TextUtils.isEmpty(userEmail) || !Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()) { // Fix the condition
+                        if (TextUtils.isEmpty(userEmail) || !Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()) {
                             Toast.makeText(login.this, "Enter your registered email id", Toast.LENGTH_SHORT).show();
                             return;
                         }

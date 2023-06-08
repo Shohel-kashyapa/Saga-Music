@@ -7,16 +7,14 @@ public class Dblg {
     private String email;
     private String password;
     private String name;
-    private String address;
+    // private String address;
 
 
-
-
-    public Dblg(String email, String password, String name, String address) {
+    public Dblg(String email, String password, String name) {
         this.email = email;
         this.password = password;
         this.name = name;
-        this.address = address;
+        //this.address = address;
 
     }
 
@@ -44,14 +42,14 @@ public class Dblg {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-
+//    public String getAddress() {
+//        return address;
+//    }
+//
+//    public void setAddress(String address) {
+//        this.address = address;
+//    }
+//
+//
 
 }

@@ -12,12 +12,6 @@
         android:theme="@style/Theme.SagaMusic"
         tools:targetApi="31">
         <activity
-            android:name=".myinsaddpage"
-            android:exported="false" />
-        <activity
-            android:name=".PaddAndRemove"
-            android:exported="false" />
-        <activity
             android:name=".adminpage"
             android:exported="false" />
         <activity
