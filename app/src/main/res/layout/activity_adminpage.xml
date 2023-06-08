@@ -15,10 +15,11 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306"
+        app:layout_constraintVertical_bias="0.298"
         app:srcCompat="@drawable/background" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="224dp"
         android:layout_height="123dp"
         android:layout_centerHorizontal="true"
@@ -26,13 +27,17 @@
         android:background="@drawable/custom_button"
         android:text="Product management"
         android:textAllCaps="false"
+
+
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-
-
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
 
     <Button
         android:id="@+id/button7"
@@ -48,8 +53,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

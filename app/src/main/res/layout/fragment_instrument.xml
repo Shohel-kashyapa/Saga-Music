@@ -1,15 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".instrumentFragment">
+    tools:context=".instrumentFragment"
+    android:background="#010616">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="727dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="487dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/myins" />
+
+            <Button
+                android:id="@+id/btn89"
+                android:layout_width="277dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FE3D6C"
+                android:text="Add and verify instrument"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
+
+            <EditText
+                android:id="@+id/editTextTextProductID"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="#b8b8b8"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="product ID"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.294" />
+
+            <TextView
+                android:id="@+id/Vins"
+                android:layout_width="180dp"
+                android:layout_height="31dp"
+                android:text="Verify Instruments"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.221" />
+
+            <Button
+                android:id="@+id/btnupw1"
+                android:layout_width="277dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FE3D6C"
+                android:text="upgrade warranty"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.76" />
+
+            <EditText
+                android:id="@+id/editTextTextwarrantycard"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="#b8b8b8"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="warranty card serial number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.664" />
+
+            <TextView
+                android:id="@+id/upw"
+                android:layout_width="180dp"
+                android:layout_height="31dp"
+                android:text="extended warranty period"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.581" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </FrameLayout>
+

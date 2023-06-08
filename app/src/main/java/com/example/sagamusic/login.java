@@ -55,22 +55,29 @@ public class login extends AppCompatActivity {
                 if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(login.this, "Please enter email and password", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Sign in user with Firebase authentication
-                    mAuth.signInWithEmailAndPassword(email, password)
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful() && task.getResult() != null) {
-                                        // Display a success message and start the home activity
-                                        Toast.makeText(login.this, "Login successful", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(login.this, home.class);
-                                        startActivity(intent);
-                                    } else {
-                                        // Display an error message if the authentication fails
-                                        Toast.makeText(login.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
+                    // Check if the user is an admin
+                    if (email.equals("admin") && password.equals("admin")) {
+                        // Navigate to the admin page
+                        Intent adminIntent = new Intent(login.this, adminpage.class);
+                        startActivity(adminIntent);
+                    } else {
+                        // Sign in user with Firebase authentication
+                        mAuth.signInWithEmailAndPassword(email, password)
+                                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<AuthResult> task) {
+                                        if (task.isSuccessful() && task.getResult() != null) {
+                                            // Display a success message and start the home activity
+                                            Toast.makeText(login.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                            Intent intent = new Intent(login.this, home.class);
+                                            startActivity(intent);
+                                        } else {
+                                            // Display an error message if the authentication fails
+                                            Toast.makeText(login.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
+                                        }
                                     }
-                                }
-                            });
+                                });
+                    }
                 }
             }
         });
