@@ -31,60 +31,42 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/fullname"
-            android:layout_width="377dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="100dp"
+            android:layout_width="167dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="228dp"
             android:layout_marginBottom="388dp"
             android:background="#ffffff"
-            android:hint="Full Name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image3"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="22dp" />
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            android:layout_width="381dp"
-            android:layout_height="44dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="344dp"
-            android:background="#ffffff"
-            android:hint="Email"
+            android:hint="last Name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/add"
-            android:layout_width="381dp"
-            android:layout_height="44dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="300dp"
+            android:layout_width="177dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="388dp"
             android:background="#ffffff"
-            android:hint="address"
+            android:hint="last Name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:layout_width="381dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="324dp"
+            android:background="#ffffff"
+            android:hint="your Email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="380dp"
             android:layout_height="46dp"
             android:layout_marginEnd="12dp"
-            android:layout_marginBottom="252dp"
+            android:layout_marginBottom="264dp"
             android:background="#ffffff"
             android:hint="password"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cmpw"
-            android:layout_width="380dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="204dp"
-            android:background="#ffffff"
-            android:hint="comfirm password"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -92,26 +74,25 @@
             android:id="@+id/button5"
             android:layout_width="385dp"
             android:layout_height="52dp"
-            android:layout_marginBottom="124dp"
-            android:text="SiGn up"
+            android:layout_marginBottom="196dp"
+            android:text="SiGIN"
             android:textColor="#000000"
             app:backgroundTint="#3BD3A6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/haveACC"
-            android:layout_width="278dp"
-            android:layout_height="36dp"
-            android:layout_marginBottom="80dp"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="312dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="148dp"
             android:text="already have an account?"
             android:textColor="#ffffff"
-            app:backgroundTint="#0000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.134"
             app:layout_constraintStart_toStartOf="parent" />
 
 

@@ -35,5 +35,10 @@
         android:name="com.example.sagamusic.homeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/menu_track"
+        android:name="com.example.sagamusic.MainTracking"
+        android:label="activity_main_tracking"
+        tools:layout="@layout/activity_main_tracking" />
 
 </navigation>
