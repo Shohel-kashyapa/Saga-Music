@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sagamusic.models.Dblg;
-import com.example.sagamusic.models.Dblg;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -25,7 +24,7 @@ public class SignUp extends AppCompatActivity {
     private EditText mPasswordEditText;
     private EditText mConfirmPasswordEditText;
     private EditText mFullNameEditText;
-
+    private EditText mAddressEditText;
 
     private Button mSubmitButton;
 
@@ -54,7 +53,7 @@ public class SignUp extends AppCompatActivity {
         mPasswordEditText = findViewById(R.id.password);
         mConfirmPasswordEditText = findViewById(R.id.cmpw);
         mFullNameEditText = findViewById(R.id.fullname);
-
+        mAddressEditText = findViewById(R.id.add);
 
         mSubmitButton = findViewById(R.id.button5);
 
@@ -65,22 +64,19 @@ public class SignUp extends AppCompatActivity {
                 String password = mPasswordEditText.getText().toString().trim();
                 String confirmPassword = mConfirmPasswordEditText.getText().toString().trim();
                 String fullName = mFullNameEditText.getText().toString().trim();
-
-
-
+                String address = mAddressEditText.getText().toString().trim();
 
                 if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
                     Toast.makeText(SignUp.this, "Please fill out all fields", Toast.LENGTH_SHORT).show();
                 } else if (!password.equals(confirmPassword)) {
                     Toast.makeText(SignUp.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
-
                 } else {
                     mAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
-                                        Dblg dblg = new Dblg (email,password,fullName);
+                                        Dblg dblg = new Dblg(email, password, fullName,address);
                                         String userID = mAuth.getCurrentUser().getUid();
                                         mDatabase.child("user").child(userID).setValue(dblg);
 
@@ -92,11 +88,9 @@ public class SignUp extends AppCompatActivity {
                                         Toast.makeText(SignUp.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                                     }
                                 }
-
                             });
                 }
             }
         });
     }
 }
-
